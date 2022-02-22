@@ -1,0 +1,128 @@
+.titles{
+    height: 100vh;
+    margin-bottom: 50px;
+    &__header{
+        margin-top: 118px;
+         @media screen and (max-width: 480px) {
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+        h3{
+            font-family: Aileron;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 171%;
+            /* or 68px */
+            color: #8A1C1D;
+             @media screen and (max-width: 480px) {
+                font-size: 30px;
+            }
+        }
+    }
+    &__confetti3{
+        width: 60px;
+        position: absolute;
+        right: 0;
+         @media screen and (max-width: 480px) {
+            width: 40px;
+            top: -60px;
+        }
+    }
+    &__confetti4{
+        width: 60px;
+        position: absolute;
+        bottom: -100px;
+         @media screen and (max-width: 480px) {
+            width: 40px;
+            bottom: -60px;
+        }
+    }
+    &__confetti5{
+        width: 60px;
+        position: absolute;
+        bottom: -450px;
+        right: 0;
+    }
+    &__container{
+        position: relative;
+        padding: 50px 100px;
+         @media screen and (max-width: 480px) {
+            padding: 0px;
+            display: flex;
+            flex-flow:column wrap ;
+        }
+    }
+    &__title{
+        &:first-of-type{
+            position: absolute;
+            left: 100px;
+             @media screen and (max-width: 480px) {
+                position: relative;
+                left: 0;
+            }
+            h3{
+                font-family: Aileron;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                color: #8A1C1D;
+                margin: 20px 0;
+                 @media screen and (max-width: 480px) {
+                    font-size: 18px;
+                }
+            }
+        }
+        &:last-of-type{
+            position: absolute;
+            right: 100px;
+            top: 250px;
+             @media screen and (max-width: 480px) {
+                position: relative;
+                right: 0;
+                top: 0;
+            }
+            h3{
+                font-family: Aileron;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                color: #8A1C1D;
+                text-align: right;
+                margin: 20px 0;
+                 @media screen and (max-width: 480px) {
+                    font-size: 18px;
+                }
+            }
+        }
+        ul{
+            display: flex;
+            flex-flow: column;
+            width: 498px;
+            height: 303px;
+            background: #E59A03;
+            list-style:none ;
+            justify-content: center;
+            padding: 0 50px;
+            border-radius: 5px;
+             @media screen and (max-width: 480px) {
+                height: 300px;
+                width: 100%;
+            }
+            li{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 154%;
+                /* identical to box height, or 37px */
+                text-align: left;
+                margin: 20px 0px;
+                color: #FFFFFF;
+                 @media screen and (max-width: 480px) {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
